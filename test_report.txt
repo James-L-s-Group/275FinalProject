@@ -21,7 +21,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (141 ms)
+  ✕ renders the course name somewhere (60 ms)
 
   ● renders the course name somewhere
 
@@ -36,7 +36,7 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mCISC 275 Final Project[0m
+            [0mUD Course Planner[0m
           [36m</header>[39m
           [36m<p>[39m
             [0mJames Lloyd, Kerry Ferguson, Matthew Conlon, Caleb Sachetti, Arnav Baliyan[0m
@@ -46,68 +46,30 @@ FAIL src/App.test.tsx
           [36m</p>[39m
           [36m<table>[39m
             [36m<tr>[39m
-              [36m<td>[39m
-                [0mFirst Year[0m
-              [36m</td>[39m
+              [36m<th>[39m
+                [0mCode[0m
+              [36m</th>[39m
+              [36m<th>[39m
+                [0mName[0m
+              [36m</th>[39m
+              [36m<th>[39m
+                [0mCredits[0m
+              [36m</th>[39m
             [36m</tr>[39m
             [36m<tr>[39m
               [36m<td>[39m
-                [0m Fall Semester[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m Spring Semester [0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mEGG[0m
+                [0mEGGG101[0m
               [36m</td>[39m
               [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
+                [0mIntroduction to Engineering[0m
               [36m</td>[39m
               [36m<td>[39m
                 [0m3[0m
               [36m</td>[39m
+            [36m</tr>[39m
+            [36m<tr>[39m
               [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
+                [0mCISC108[0m
               [36m</td>[39m
               [36m<td>[39m
                 [0mIntroduction to Computer Science I[0m
@@ -118,22 +80,7 @@ FAIL src/App.test.tsx
             [36m</tr>[39m
             [36m<tr>[39m
               [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
+                [0mMATH241[0m
               [36m</td>[39m
               [36m<td>[39m
                 [0mAnalytic Geomnetry & Calculus A[0m
@@ -144,22 +91,7 @@ FAIL src/App.test.tsx
             [36m</tr>[39m
             [36m<tr>[39m
               [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
+                [0mENGL110[0m
               [36m</td>[39m
               [36m<td>[39m
                 [0mSeminar in Composition[0m
@@ -169,458 +101,14 @@ FAIL src/App.test.tsx
               [36m</td>[39m
             [36m</tr>[39m
             [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
               [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
+                [0mPHIL101[0m
+              [36m</td>[39m
+              [36m<td>[39m
+                [0mGreat Western Philosophers[0m
               [36m</td>[39m
               [36m<td>[39m
                 [0m3[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mSecond Year[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mThird Year[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mFourth Year[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mEGG[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering (FYE)[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m2[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mCISC[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mMATH[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mENGL[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0mBreadth Requirement Elective 1[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
-              [36m</td>[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td />[39m
-              [36m<td>[39m
-                [0m15[0m
               [36m</td>[39m
             [36m</tr>[39m
           [36m</table>[39m
@@ -646,14 +134,20 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |      100 |     100 |     100 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
-----------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |      100 |     100 |     100 |                   
+ src                   |     100 |      100 |     100 |     100 |                   
+  App.tsx              |     100 |      100 |     100 |     100 |                   
+  classData.tsx        |     100 |      100 |     100 |     100 |                   
+ src/PlannerInterfaces |       0 |        0 |       0 |       0 |                   
+  course.ts            |       0 |        0 |       0 |       0 |                   
+  plan.ts              |       0 |        0 |       0 |       0 |                   
+  semester.ts          |       0 |        0 |       0 |       0 |                   
+-----------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.904 s
+Time:        1.961 s
 Ran all test suites.
