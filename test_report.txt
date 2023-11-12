@@ -21,7 +21,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (60 ms)
+  ✕ renders the course name somewhere (77 ms)
 
   ● renders the course name somewhere
 
@@ -56,61 +56,6 @@ FAIL src/App.test.tsx
                 [0mCredits[0m
               [36m</th>[39m
             [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mEGGG101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Engineering[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mCISC108[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mIntroduction to Computer Science I[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mMATH241[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mAnalytic Geomnetry & Calculus A[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m4[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mENGL110[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mSeminar in Composition[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
-            [36m<tr>[39m
-              [36m<td>[39m
-                [0mPHIL101[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0mGreat Western Philosophers[0m
-              [36m</td>[39m
-              [36m<td>[39m
-                [0m3[0m
-              [36m</td>[39m
-            [36m</tr>[39m
           [36m</table>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -137,10 +82,11 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |     100 |      100 |     100 |     100 |                   
- src                   |     100 |      100 |     100 |     100 |                   
+All files              |    2.85 |        0 |    6.66 |    2.85 |                   
+ src                   |    2.85 |        0 |    6.66 |    2.85 |                   
   App.tsx              |     100 |      100 |     100 |     100 |                   
-  classData.tsx        |     100 |      100 |     100 |     100 |                   
+  Course.tsx           |       0 |        0 |       0 |       0 | 11-170            
+  classData.tsx        |       0 |      100 |     100 |       0 | 2                 
  src/PlannerInterfaces |       0 |        0 |       0 |       0 |                   
   course.ts            |       0 |        0 |       0 |       0 |                   
   plan.ts              |       0 |        0 |       0 |       0 |                   
@@ -149,5 +95,5 @@ All files              |     100 |      100 |     100 |     100 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.961 s
+Time:        2.1 s
 Ran all test suites.
