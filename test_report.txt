@@ -21,7 +21,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (71 ms)
+  ✕ renders the course name somewhere (68 ms)
 
   ● renders the course name somewhere
 
@@ -82,11 +82,12 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |    1.35 |        0 |    2.85 |    1.35 |                   
- src                   |    1.35 |        0 |    2.85 |    1.35 |                   
+All files              |    1.03 |        0 |       2 |    1.04 |                   
+ src                   |    1.03 |        0 |       2 |    1.04 |                   
   App.tsx              |     100 |      100 |     100 |     100 |                   
-  Course.tsx           |       0 |        0 |       0 |       0 | 11-170            
-  Semester.tsx         |       0 |        0 |       0 |       0 | 18-259            
+  CoursePlan.tsx       |       0 |        0 |       0 |       0 | 11-170            
+  DegreePlan.tsx       |       0 |        0 |       0 |       0 | 18-132            
+  SemesterTable.tsx    |       0 |        0 |       0 |       0 | 18-259            
   classData.tsx        |       0 |      100 |     100 |       0 | 2                 
  src/PlannerInterfaces |       0 |        0 |       0 |       0 |                   
   course.ts            |       0 |        0 |       0 |       0 |                   
@@ -96,5 +97,5 @@ All files              |    1.35 |        0 |    2.85 |    1.35 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.026 s
+Time:        2.505 s
 Ran all test suites.
