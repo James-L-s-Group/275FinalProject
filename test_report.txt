@@ -10,7 +10,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at tr
         at table
         at div
-        at App
+        at App (/home/runner/work/275FinalProject/275FinalProject/src/App.tsx:6:43)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -21,7 +21,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (87 ms)
+  ✕ renders the course name somewhere (93 ms)
 
   ● renders the course name somewhere
 
@@ -41,87 +41,13 @@ FAIL src/App.test.tsx
           [36m<p>[39m
             [0mJames Lloyd, Kerry Ferguson, Matthew Conlon, Caleb Sachetti, Arnav Baliyan[0m
           [36m</p>[39m
-          [36m<button[39m
-            [33mid[39m=[32m"myBtn"[39m
-          [36m>[39m
-            [0mShow Instructions[0m
-          [36m</button>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"modal"[39m
-            [33mid[39m=[32m"myModal"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"modal-content"[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mid[39m=[32m"openModalBtn"[39m
+              [33mtitle[39m=[32m"Open Modal"[39m
             [36m>[39m
-              [36m<span[39m
-                [33mclass[39m=[32m"close"[39m
-              [36m>[39m
-                [0m×[0m
-              [36m</span>[39m
-              [36m<p>[39m
-                [36m<b>[39m
-                  [0mGetting Started:[0m
-                [36m</b>[39m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mClick the button labeled [0m
-                [36m<b>[39m
-                  [0mAdd New Plan[0m
-                [36m</b>[39m
-                [0m to create a plan. You can rename it by clicking the apropriate icon that pops up next to the button. Use the[0m
-                [0m [0m
-                [36m<b>[39m
-                  [0mSave Plan Changes[0m
-                [36m</b>[39m
-                [0m button to have the plan show up in the dropdown that contains all plans (including samples).[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mYou can use the buttons labeled [0m
-                [36m<b>[39m
-                  [0mAdd Semester[0m
-                [36m</b>[39m
-                [0m to (you guessed it) add a semester. You can name the semester with the same icon as earlier. To add a course, use the [0m
-                [36m<b>[39m
-                  [0mAdd Course[0m
-                [36m</b>[39m
-                [0m button.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mIn the dropdown menu, type your course code and click on the course to confirm your selection. You can then use the [0m
-                [36m<b>[39m
-                  [0mAdd Course[0m
-                [36m</b>[39m
-                [0m button to add it to your semester. You can use the [0m
-                [36m<b>[39m
-                  [0mEdit Course[0m
-                [36m</b>[39m
-                [0m button at any point to change these courses. To save your changes, use the[0m
-                [0m [0m
-                [36m<b>[39m
-                  [0mSave Plan Changes[0m
-                [36m</b>[39m
-                [0m button.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mTo delete a course, semseter, or plan, click the associated button. There will be a special delete button for each associated element.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mThe website additionally features degree requirements, which can be accessed from the[0m
-                [0m [0m
-                [36m<b>[39m
-                  [0mDegree Requirements[0m
-                [36m</b>[39m
-                [0m button. This section shows all required courses, as well as some breadth requirements, for a standard bachelors in Computer Science at UD. Courses already taken, including breadths, will have a check mark next to them. Any classes not taken will have an x next to them.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mNever forget to save plans! Use the[0m
-                [0m [0m
-                [36m<b>[39m
-                  [0mSave Plan Changes[0m
-                [36m</b>[39m
-                [0m button frequently. Feel free to play around with the different tools available as much as you deem necessary.[0m
-              [36m</p>[39m
-            [36m</div>[39m
+              [0mSee Instructions[0m
+            [36m</button>[39m
           [36m</div>[39m
           [36m<p>[39m
             [0m List of Degree Plans: [0m
@@ -141,6 +67,9 @@ FAIL src/App.test.tsx
           [36m</table>[39m
         [36m</div>[39m
       [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"ReactModalPortal"[39m
+      [36m/>[39m
     [36m</body>[39m
 
        5 | test("renders the course name somewhere", () => {
@@ -164,9 +93,9 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |     1.2 |        0 |     2.5 |     1.2 |                   
- src                   |     1.2 |        0 |     2.5 |     1.2 |                   
-  App.tsx              |     100 |      100 |     100 |     100 |                   
+All files              |    4.54 |        0 |    2.38 |    4.54 |                   
+ src                   |    4.54 |        0 |    2.38 |    4.54 |                   
+  App.tsx              |   66.66 |      100 |   33.33 |   66.66 | 8,11              
   CoursePlan.tsx       |       0 |        0 |       0 |       0 | 11-217            
   SemesterTable.tsx    |       0 |        0 |       0 |       0 | 18-259            
   classData.tsx        |       0 |      100 |     100 |       0 | 2                 
@@ -178,5 +107,5 @@ All files              |     1.2 |        0 |     2.5 |     1.2 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.665 s
+Time:        2.437 s
 Ran all test suites.
