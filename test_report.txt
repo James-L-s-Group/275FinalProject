@@ -10,7 +10,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at tr
         at table
         at div
-        at App (/home/runner/work/275FinalProject/275FinalProject/src/App.tsx:6:43)
+        at App (/home/runner/work/275FinalProject/275FinalProject/src/App.tsx:9:43)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -21,7 +21,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (93 ms)
+  ✕ renders the course name somewhere (104 ms)
 
   ● renders the course name somewhere
 
@@ -41,6 +41,33 @@ FAIL src/App.test.tsx
           [36m<p>[39m
             [0mJames Lloyd, Kerry Ferguson, Matthew Conlon, Caleb Sachetti, Arnav Baliyan[0m
           [36m</p>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0mNew Plan[0m
+                [0m [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btntransparent btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mEdit Name[0m
+                [36m</button>[39m
+              [36m</h1>[39m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btnadd btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd Semester[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btncancel btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mDelete All Semesters[0m
+            [36m</button>[39m
+            [36m<br />[39m
+          [36m</div>[39m
           [36m<div>[39m
             [36m<button[39m
               [33mid[39m=[32m"openModalBtn"[39m
@@ -93,12 +120,13 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |    4.54 |        0 |    2.38 |    4.54 |                   
- src                   |    4.54 |        0 |    2.38 |    4.54 |                   
-  App.tsx              |   66.66 |      100 |   33.33 |   66.66 | 8,11              
-  CoursePlan.tsx       |       0 |        0 |       0 |       0 | 11-217            
-  SemesterTable.tsx    |       0 |        0 |       0 |       0 | 18-259            
-  classData.tsx        |       0 |      100 |     100 |       0 | 2                 
+All files              |   14.15 |     6.25 |    7.01 |   14.28 |                   
+ src                   |   14.15 |     6.25 |    7.01 |   14.28 |                   
+  App.tsx              |   77.77 |      100 |   33.33 |   77.77 | 11,14             
+  CoursePlan.tsx       |    7.14 |        0 |    5.26 |    7.14 | 21-217            
+  Plan.tsx             |   13.63 |       50 |    6.66 |   14.28 | 23-75,88-132      
+  SemesterTable.tsx    |    5.12 |        0 |       5 |    5.12 | 33-259            
+  classData.tsx        |     100 |      100 |     100 |     100 |                   
  src/PlannerInterfaces |       0 |        0 |       0 |       0 |                   
   course.ts            |       0 |        0 |       0 |       0 |                   
   plan.ts              |       0 |        0 |       0 |       0 |                   
@@ -107,5 +135,5 @@ All files              |    4.54 |        0 |    2.38 |    4.54 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.437 s
+Time:        2.7 s
 Ran all test suites.
