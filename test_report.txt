@@ -82,10 +82,11 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |    2.85 |        0 |    6.66 |    2.85 |                   
- src                   |    2.85 |        0 |    6.66 |    2.85 |                   
+All files              |    1.35 |        0 |    2.85 |    1.35 |                   
+ src                   |    1.35 |        0 |    2.85 |    1.35 |                   
   App.tsx              |     100 |      100 |     100 |     100 |                   
   Course.tsx           |       0 |        0 |       0 |       0 | 11-170            
+  Semester.tsx         |       0 |        0 |       0 |       0 | 18-259            
   classData.tsx        |       0 |      100 |     100 |       0 | 2                 
  src/PlannerInterfaces |       0 |        0 |       0 |       0 |                   
   course.ts            |       0 |        0 |       0 |       0 |                   
@@ -95,5 +96,5 @@ All files              |    2.85 |        0 |    6.66 |    2.85 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.068 s
+Time:        2.026 s
 Ran all test suites.
