@@ -43,7 +43,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at callComponentWillUnmountWithTimer (node_modules/react-dom/cjs/react-dom.development.js:20413:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (101 ms)
+  ✕ renders the course name somewhere (97 ms)
 
   ● renders the course name somewhere
 
@@ -237,23 +237,26 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   14.15 |     6.25 |    7.01 |   14.28 |                   
- src                   |   14.15 |     6.25 |    7.01 |   14.28 |                   
-  App.tsx              |   77.77 |      100 |   33.33 |   77.77 | 11,14             
-  CoursePlan.tsx       |    7.14 |        0 |    5.26 |    7.14 | 25-220            
-  Plan.tsx             |   13.63 |       50 |    6.66 |   14.28 | 23-75,88-132      
-  SemesterTable.tsx    |    5.12 |        0 |       5 |    5.12 | 33-258            
-  classData.tsx        |     100 |      100 |     100 |     100 |                   
- src/PlannerInterfaces |       0 |        0 |       0 |       0 |                   
-  course.ts            |       0 |        0 |       0 |       0 |                   
-  plan.ts              |       0 |        0 |       0 |       0 |                   
-  semester.ts          |       0 |        0 |       0 |       0 |                   
------------------------|---------|----------|---------|---------|-------------------
+------------------------|---------|----------|---------|---------|-------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |     4.9 |     0.65 |    6.34 |    4.91 |                   
+ src                    |     4.9 |     0.65 |    6.34 |    4.91 |                   
+  App.tsx               |   77.77 |      100 |   33.33 |   77.77 | 11,14             
+  BreadthCategories.tsx |       0 |      100 |     100 |       0 | 2-1593            
+  CoursePlan.tsx        |    6.06 |        0 |    7.14 |    6.06 | 34-170            
+  DegreeReqs.tsx        |       0 |        0 |       0 |       0 | 26-289            
+  Plan.tsx              |   13.63 |       50 |    6.66 |   14.28 | 23-75,88-132      
+  PreRequisite.tsx      |       0 |        0 |       0 |       0 | 13-50             
+  SemesterTable.tsx     |    5.12 |        0 |       5 |    5.12 | 33-258            
+  classData.tsx         |     100 |      100 |     100 |     100 |                   
+ src/PlannerInterfaces  |       0 |        0 |       0 |       0 |                   
+  course.ts             |       0 |        0 |       0 |       0 |                   
+  plan.ts               |       0 |        0 |       0 |       0 |                   
+  semester.ts           |       0 |        0 |       0 |       0 |                   
+------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.626 s
+Time:        3.408 s
 Ran all test suites.
