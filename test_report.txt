@@ -20,44 +20,15 @@ Browserslist: caniuse-lite is outdated. Please run:
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-  console.error
-    Warning: react-modal: App element is not defined. Please use `Modal.setAppElement(el)` or set `appElement={el}`. This is needed so screen readers don't see main content when modal is opened. It is not recommended, but you can opt-out by setting `ariaHideApp={false}`.
-
-      at printWarning (node_modules/warning/warning.js:34:15)
-      at warning (node_modules/warning/warning.js:57:20)
-      at validateElement (node_modules/react-modal/lib/helpers/ariaAppHider.js:77:27)
-      at Object.hide (node_modules/react-modal/lib/helpers/ariaAppHider.js:89:26)
-      at ModalPortal.beforeOpen (node_modules/react-modal/lib/components/ModalPortal.js:342:22)
-      at ModalPortal._this.open (node_modules/react-modal/lib/components/ModalPortal.js:135:13)
-      at ModalPortal.componentDidMount (node_modules/react-modal/lib/components/ModalPortal.js:285:14)
-
-  console.error
-    Warning: react-modal: App element is not defined. Please use `Modal.setAppElement(el)` or set `appElement={el}`. This is needed so screen readers don't see main content when modal is opened. It is not recommended, but you can opt-out by setting `ariaHideApp={false}`.
-
-      at printWarning (node_modules/warning/warning.js:34:15)
-      at warning (node_modules/warning/warning.js:57:20)
-      at validateElement (node_modules/react-modal/lib/helpers/ariaAppHider.js:77:27)
-      at Object.show (node_modules/react-modal/lib/helpers/ariaAppHider.js:116:27)
-      at ModalPortal._this.afterClose (node_modules/react-modal/lib/components/ModalPortal.js:114:24)
-      at ModalPortal.componentWillUnmount (node_modules/react-modal/lib/components/ModalPortal.js:317:14)
-      at callComponentWillUnmountWithTimer (node_modules/react-dom/cjs/react-dom.development.js:20413:14)
-
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (97 ms)
+  ✕ renders the course name somewhere (76 ms)
 
   ● renders the course name somewhere
 
     TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body[39m
-      [33mclass[39m=[32m"ReactModal__Body--open"[39m
-    [36m>[39m
-      [36m<div[39m
-        [33mdata-react-modal-body-trap[39m=[32m""[39m
-        [33mstyle[39m=[32m"position: absolute; opacity: 0;"[39m
-        [33mtabindex[39m=[32m"0"[39m
-      [36m/>[39m
+    [36m<body>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -83,6 +54,7 @@ FAIL src/App.test.tsx
                 [36m</button>[39m
               [36m</h1>[39m
             [36m</div>[39m
+            [36m<span />[39m
             [36m<button[39m
               [33mclass[39m=[32m"btnadd btn btn-primary"[39m
               [33mtype[39m=[32m"button"[39m
@@ -124,99 +96,8 @@ FAIL src/App.test.tsx
         [36m</div>[39m
       [36m</div>[39m
       [36m<div[39m
-        [33mdata-react-modal-body-trap[39m=[32m""[39m
-        [33mstyle[39m=[32m"position: absolute; opacity: 0;"[39m
-        [33mtabindex[39m=[32m"0"[39m
-      [36m/>[39m
-      [36m<div[39m
         [33mclass[39m=[32m"ReactModalPortal"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"ReactModal__Overlay custom-overlay"[39m
-        [36m>[39m
-          [36m<div[39m
-            [33maria-label[39m=[32m"Example Modal"[39m
-            [33maria-modal[39m=[32m"true"[39m
-            [33mclass[39m=[32m"ReactModal__Content custom-modal"[39m
-            [33mrole[39m=[32m"dialog"[39m
-            [33mtabindex[39m=[32m"-1"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"modal-content"[39m
-            [36m>[39m
-              [36m<span[39m
-                [33mclass[39m=[32m"close"[39m
-              [36m>[39m
-                [0m×[0m
-              [36m</span>[39m
-              [36m<p>[39m
-                [36m<b>[39m
-                  [0mGetting Started:[0m
-                [36m</b>[39m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mClick the button labeled [0m
-                [36m<b>[39m
-                  [0mAdd New Plan[0m
-                [36m</b>[39m
-                [0m to create a plan. You can rename it by clicking the apropriate icon that pops up next to the button. Use the [0m
-                [36m<b>[39m
-                  [0mSave Plan Changes[0m
-                [36m</b>[39m
-                [0m button to have the plan show up in the dropdown that contains all plans (including samples).[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mYou can use the buttons labeled [0m
-                [36m<b>[39m
-                  [0mAdd Semester[0m
-                [36m</b>[39m
-                [0m [0m
-                [0mto (you guessed it) add a semester. You can name the semester with the same icon as earlier. To add a course, use the [0m
-                [36m<b>[39m
-                  [0mAdd Course[0m
-                [36m</b>[39m
-                [0m button.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mIn the dropdown menu, type your course code and click on the course to confirm your selection. You can then use the [0m
-                [36m<b>[39m
-                  [0mAdd Course[0m
-                [36m</b>[39m
-                [0m button to add it to your semester. You can use the [0m
-                [36m<b>[39m
-                  [0mEdit Course[0m
-                [36m</b>[39m
-                [0m [0m
-                [0mbutton at any point to change these courses. To save your changes, use the [0m
-                [36m<b>[39m
-                  [0mSave Plan Changes[0m
-                [36m</b>[39m
-                [0m [0m
-                [0mbutton.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mTo delete a course, semseter, or plan, click the associated button. There will be a special delete button for each associated element.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mThe website additionally features degree requirements, which can be accessed from the[0m
-                [0m [0m
-                [36m<b>[39m
-                  [0mDegree Requirements[0m
-                [36m</b>[39m
-                [0m button. This section shows all required courses, as well as some breadth requirements, for a standard bachelors in Computer Science at UD. Courses already taken, including breadths, will have a check mark next to them. Any classes not taken will have an x next to them.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0mNever forget to save plans! Use the[0m
-                [0m [0m
-                [36m<b>[39m
-                  [0mSave Plan Changes[0m
-                [36m</b>[39m
-                [0m button frequently. Feel free to play around with the different tools available as much as you deem necessary.[0m
-              [36m</p>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
+      [36m/>[39m
     [36m</body>[39m
 
        5 | test("renders the course name somewhere", () => {
@@ -240,13 +121,13 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |     4.9 |     0.65 |    6.34 |    4.91 |                   
- src                    |     4.9 |     0.65 |    6.34 |    4.91 |                   
+All files               |    5.21 |     0.65 |    6.34 |    5.22 |                   
+ src                    |    5.21 |     0.65 |    6.34 |    5.22 |                   
   App.tsx               |   77.77 |      100 |   33.33 |   77.77 | 11,14             
   BreadthCategories.tsx |       0 |      100 |     100 |       0 | 2-1593            
   CoursePlan.tsx        |    6.06 |        0 |    7.14 |    6.06 | 34-170            
   DegreeReqs.tsx        |       0 |        0 |       0 |       0 | 26-289            
-  Plan.tsx              |   13.63 |       50 |    6.66 |   14.28 | 23-75,88-132      
+  Plan.tsx              |   17.39 |       50 |    6.66 |   18.18 | 23-75,88-133      
   PreRequisite.tsx      |       0 |        0 |       0 |       0 | 13-50             
   SemesterTable.tsx     |    5.12 |        0 |       5 |    5.12 | 33-258            
   classData.tsx         |     100 |      100 |     100 |     100 |                   
@@ -258,5 +139,5 @@ All files               |     4.9 |     0.65 |    6.34 |    4.91 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.408 s
+Time:        3.228 s
 Ran all test suites.
