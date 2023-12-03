@@ -28,7 +28,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at callComponentWillUnmountWithTimer (node_modules/react-dom/cjs/react-dom.development.js:20413:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (77 ms)
+  ✕ renders the course name somewhere (78 ms)
 
   ● renders the course name somewhere
 
@@ -56,6 +56,14 @@ FAIL src/App.test.tsx
             [0mJames Lloyd, Kerry Ferguson, Matthew Conlon, Caleb Sachetti, Arnav Baliyan[0m
           [36m</p>[39m
           [36m<div>[39m
+            [36m<button[39m
+              [33mid[39m=[32m"openModalBtn"[39m
+              [33mtitle[39m=[32m"Open Modal"[39m
+            [36m>[39m
+              [0mSee Instructions[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div>[39m
             [36m<div>[39m
               [36m<h1>[39m
                 [0mNew Plan[0m
@@ -82,14 +90,6 @@ FAIL src/App.test.tsx
               [0mDelete All Semesters[0m
             [36m</button>[39m
             [36m<br />[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mid[39m=[32m"openModalBtn"[39m
-              [33mtitle[39m=[32m"Open Modal"[39m
-            [36m>[39m
-              [0mSee Instructions[0m
-            [36m</button>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -228,5 +228,5 @@ All files               |    4.76 |     0.64 |    6.15 |    4.77 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.459 s
+Time:        3.379 s
 Ran all test suites.
