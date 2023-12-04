@@ -28,7 +28,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at callComponentWillUnmountWithTimer (node_modules/react-dom/cjs/react-dom.development.js:20413:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (75 ms)
+  ✕ renders the course name somewhere (78 ms)
 
   ● renders the course name somewhere
 
@@ -255,5 +255,5 @@ All files               |     8.3 |     0.64 |    7.24 |    8.04 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.084 s
+Time:        3.206 s
 Ran all test suites.
