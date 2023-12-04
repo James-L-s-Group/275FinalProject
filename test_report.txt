@@ -28,7 +28,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at callComponentWillUnmountWithTimer (node_modules/react-dom/cjs/react-dom.development.js:20413:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (77 ms)
+  ✕ renders the course name somewhere (75 ms)
 
   ● renders the course name somewhere
 
@@ -134,26 +134,48 @@ FAIL src/App.test.tsx
                 [36m<b>[39m
                   [0mAdd New Plan[0m
                 [36m</b>[39m
-                [0m to create a plan. You can rename it by clicking the apropriate icon that pops up next to the button. Use the [0m
+                [0m to create a plan. You can rename it by clicking the[0m
+                [0m [0m
+                [36m<b>[39m
+                  [0mEdit Name[0m
+                [36m</b>[39m
+                [0m button. Use the [0m
+                [36m<b>[39m
+                  [0mStop Editing[0m
+                [36m</b>[39m
+                [0m [0m
+                [0mbutton to save whatever name you have. Use the[0m
+                [0m [0m
                 [36m<b>[39m
                   [0mSave Plan Changes[0m
                 [36m</b>[39m
                 [0m button to have the plan show up in the dropdown that contains all plans (including samples).[0m
               [36m</p>[39m
               [36m<p>[39m
-                [0mYou can use the buttons labeled [0m
+                [0mYou can use the button labeled [0m
                 [36m<b>[39m
                   [0mAdd Semester[0m
                 [36m</b>[39m
                 [0m [0m
-                [0mto (you guessed it) add a semester. You can name the semester with the same icon as earlier. To add a course, use the [0m
+                [0mto (you guessed it) add a semester. Use the drop down menus to select the season and year. You can name the semester with the [0m
+                [36m<b>[39m
+                  [0mEdit Semester Name[0m
+                [36m</b>[39m
+                [0m [0m
+                [0mbutton. To add a course, use the [0m
                 [36m<b>[39m
                   [0mAdd Course[0m
+                [36m</b>[39m
+                [0m [0m
+                [0mbutton. To clear the semester, use the[0m
+                [0m [0m
+                [36m<b>[39m
+                  [0mRemove All Courses[0m
                 [36m</b>[39m
                 [0m button.[0m
               [36m</p>[39m
               [36m<p>[39m
-                [0mIn the dropdown menu, type your course code and click on the course to confirm your selection. You can then use the [0m
+                [0mWhen selecting a course, type your course code and click on the course to confirm your selection. You can then use the [0m
                 [36m<b>[39m
                   [0mAdd Course[0m
                 [36m</b>[39m
@@ -233,5 +255,5 @@ All files               |     8.3 |     0.64 |    7.24 |    8.04 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.249 s
+Time:        3.084 s
 Ran all test suites.
