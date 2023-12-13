@@ -28,7 +28,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at callComponentWillUnmountWithTimer (node_modules/react-dom/cjs/react-dom.development.js:20413:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (78 ms)
+  ✕ renders the course name somewhere (83 ms)
 
   ● renders the course name somewhere
 
@@ -95,6 +95,15 @@ FAIL src/App.test.tsx
               [0mDelete All Semesters[0m
             [36m</button>[39m
             [36m<br />[39m
+            [36m<span />[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btnsave btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mExport plan as CSV[0m
+              [36m</button>[39m
+            [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -237,13 +246,14 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |     8.3 |     0.64 |    7.24 |    8.04 |                   
- src                    |     8.3 |     0.64 |    7.24 |    8.04 |                   
+All files               |    7.91 |     0.64 |    6.49 |    7.66 |                   
+ src                    |    7.91 |     0.64 |    6.49 |    7.66 |                   
   App.tsx               |   77.77 |      100 |   33.33 |   77.77 | 11,14             
   BreadthCategories.tsx |     100 |      100 |     100 |     100 |                   
   CoursePlan.tsx        |    6.06 |        0 |    7.14 |    6.06 | 34-170            
   DegreeReqs.tsx        |       0 |        0 |       0 |       0 | 27-290            
-  Plan.tsx              |   13.79 |       50 |    5.55 |   14.28 | 25-77,90-139      
+  ExportToCSV.tsx       |       0 |      100 |       0 |       0 | 9-49              
+  Plan.tsx              |   13.33 |       50 |    5.26 |   13.79 | 26-78,91-148      
   PreRequisite.tsx      |       0 |        0 |       0 |       0 | 13-50             
   SemesterTable.tsx     |     9.8 |        0 |    8.69 |       8 | 66-296            
   classData.tsx         |     100 |      100 |     100 |     100 |                   
@@ -255,5 +265,5 @@ All files               |     8.3 |     0.64 |    7.24 |    8.04 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.053 s
+Time:        3.22 s
 Ran all test suites.
