@@ -6,6 +6,7 @@ import { plan } from "./PlannerInterfaces/plan";
 import { semester } from "./PlannerInterfaces/semester";
 import { DisplaySemester } from "./SemesterTable";
 import { DegreeRequirements } from "./DegreeReqs";
+import { ExportToCSV } from "./ExportToCSV";
 
 export function Plan({
     degreePlans,
@@ -140,6 +141,15 @@ export function Plan({
                 Delete All Semesters
             </Button>
             <br></br>
+            <span></span>
+            <div>
+                <Button
+                    className="btnsave"
+                    onClick={() => ExportToCSV({ degreePlan: currentPlan })}
+                >
+                    Export plan as CSV
+                </Button>
+            </div>
         </div>
     );
 }
