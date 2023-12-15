@@ -51,20 +51,21 @@
 .ReactModal__Content {
     background: #fff;
     padding: 20px;
-    border: none;
+    border: #fff;
     border-radius: 4px;
-    outline: none;
+    outline: #fff;
     width: 80%;
     max-width: 10000px;
     text-align: left;
 }
 
 .custom-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(76, 59, 59, 0.5);
 }
 
 .modal-content {
     position: relative;
+    border: #fff;
 }
 
 .close {
@@ -118,8 +119,8 @@ body {
 
 /*buttons*/
 #openModalBtn {
-    color: #000000;
-    background: #fff;
+    color: #fff;
+    background: #000000;
     font-weight: bold;
     border-radius: 5px;
     border: rgba(0, 0, 0, 0.5);
@@ -130,5 +131,100 @@ body {
 }
 
 #openModalBtn:hover {
-    background: #dddddd;
+    color: #000000;
+    background: #efefef;
+}
+
+#openModalBtn:active {
+    color: #fff;
+    background: #000000;
+}
+
+.btn {
+    color: #fff;
+    background: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.5);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.btn:hover {
+    color: #000000;
+    background: #efefef;
+}
+
+.btn:active {
+    color: #fff;
+    background: #000000;
+}
+
+.btnadd {
+    color: #fff;
+    background: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.5);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.btnadd:hover {
+    color: #000000;
+    background: #efefef;
+}
+
+.btnadd:active {
+    color: #fff;
+    background: #000000;
+}
+
+.btncancel {
+    color: #ff0000;
+    background: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.5);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.btncancel:hover {
+    color: #000000;
+    background: #ff4444;
+}
+
+.btncancel:active {
+    color: #000000;
+    background: #ff0000;
+}
+
+/*dropdowns*/
+#selectSzn {
+    color: #000000;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#selectSzn:hover {
+    color: #000000;
+    background: #dadada;
+}
+
+#selectYr {
+    color: #000000;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#selectYr:hover {
+    color: #000000;
+    background: #dadada;
 }
