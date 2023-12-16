@@ -1,7 +1,7 @@
 import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
-import { DegreeRequirements } from "./DegreeReqs";
+//import { DegreeRequirements } from "./DegreeReqs";
 
 test("renders the course name somewhere", () => {
     render(<App />);
