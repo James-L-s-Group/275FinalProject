@@ -23,7 +23,6 @@ interface Degree_Requirements_Inputs {
 export function DegreeRequirements({
     userSemesters
 }: Degree_Requirements_Inputs): JSX.Element {
-    //set all courses and wider requirements to not meet the set requirements
     let engl110 = false;
     let FYS = false;
     let DLE = false;
@@ -283,9 +282,6 @@ export function DegreeRequirements({
     if (totalCreditsInPlan >= 124) {
         moreThan124Credits = true;
     }
-
-    //Big return that houses the modal and all requirements along with the check or x that
-    //represents the true of false
 
     return (
         <div>

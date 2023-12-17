@@ -1,4 +1,6 @@
 /* eslint-disable no-extra-parens */
+//Something was syntactically correct, but prettier was being annoying and clicking the fix button made it worse
+
 import React, { useState } from "react";
 import "./App.css";
 ///import { Button } from "react-bootstrap";
@@ -18,7 +20,6 @@ const courseList = data.map(
         preReq: course.preReq
     })
 );
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function DisplayCourse({
     defaultCourse,
     semester,
@@ -32,10 +33,10 @@ export function DisplayCourse({
 }): JSX.Element {
     //set/edit courseID
     const [courseID, setCourseID] = useState<string>(defaultCourse.courseID);
-    const [isEditing, setIsEditing] = useState<boolean>(false); //If editing course info or not
-    const [credits, setCredits] = useState<number>(defaultCourse.credits); //Credit editing
-    const [name, setName] = useState<string>(defaultCourse.name); //name editing
-    const [preReqs, setPreReqs] = useState<string>(defaultCourse.preReq); //PreReq editing
+    const [isEditing, setIsEditing] = useState<boolean>(false);
+    const [credits, setCredits] = useState<number>(defaultCourse.credits);
+    const [name, setName] = useState<string>(defaultCourse.name);
+    const [preReqs, setPreReqs] = useState<string>(defaultCourse.preReq);
 
     //Saves changes to use for Plan
     function editCourse(course: course) {
@@ -99,6 +100,7 @@ export function DisplayCourse({
         <>
             {
                 // eslint-disable-next-line no-extra-parens, prettier/prettier
+                //Something was syntactically correct, but prettier was being annoying and clicking the fix button made it worse
             }{" "}
             {isEditing ? (
                 <>
