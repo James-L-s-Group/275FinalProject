@@ -1,20 +1,60 @@
+/* eslint-disable no-extra-parens */
+//Something was syntactically correct, but prettier was being annoying and clicking the fix button made it worse
 import React, { useState } from "react";
 import Modal from "react-modal";
 import "./App.css";
 import { plan } from "./PlannerInterfaces/plan";
 import { Plan } from "./Plan";
 import defaultPlans from "./Defaults.json";
+import { Button, Form } from "react-bootstrap";
 
 function App(): JSX.Element {
     const [modalIsOpen, setModalIsOpen] = useState(true);
+    const [selectedPlan, setSelectedPlan] = useState<number>(0); //Selected plan, -1 if no plan selected
+    let num = 0;
     const openModal = () => {
         setModalIsOpen(true);
     };
     const closeModal = () => {
         setModalIsOpen(false);
     };
+
     useState<number>(-1);
-    const defaultPlan = defaultPlans.defaultPlans;
+    const defaultPlan = defaultPlans.defaultPlans.map(
+        (plan: plan): plan => ({ ...plan, id: makeID() })
+    );
+    function makeID(): string {
+        num = num + 1;
+        return num.toString();
+    }
+    function addPlan() {
+        const newPlan = {
+            id: makeID(),
+            name: "New Plan",
+            semesters: []
+        };
+        setDegreePlans([...degreePlans, newPlan]);
+        setSelectedPlan(degreePlans.length);
+    }
+    function updateSelectedPlan(event: React.ChangeEvent<HTMLSelectElement>) {
+        setSelectedPlan(
+            degreePlans.findIndex(
+                (plan: plan) => plan.id === event.target.value
+            )
+        );
+    }
+
+    function deletePlan() {
+        const newDegreePlans = [...degreePlans];
+        newDegreePlans.splice(
+            degreePlans.findIndex(
+                (plan: plan) => plan.id === degreePlans[selectedPlan].id
+            ),
+            1
+        );
+        setDegreePlans(newDegreePlans);
+        setSelectedPlan(-1);
+    }
     const [degreePlans, setDegreePlans] = useState<plan[]>(defaultPlan);
     return (
         <div className="App">
@@ -92,11 +132,36 @@ function App(): JSX.Element {
                     </div>
                 </Modal>
             </div>
+            <Form.Group controlId="userPlans">
+                <Form.Label>Select Degree Plan:</Form.Label>
+                <Form.Select
+                    className="dropdownWidth"
+                    value={
+                        selectedPlan === -1
+                            ? "-No Plan Selected-"
+                            : degreePlans[selectedPlan].id
+                    }
+                    onChange={updateSelectedPlan}
+                >
+                    <option value={"Special"}>-No Plan Selected-</option>
+                    {degreePlans.map((plan: plan) => (
+                        <option key={plan.id} value={plan.id}>
+                            {plan.name}
+                        </option>
+                    ))}
+                </Form.Select>
+            </Form.Group>
             <Plan
                 degreePlans={degreePlans}
                 setDegreePlans={setDegreePlans}
                 currentPlan={degreePlans[0]}
             ></Plan>
+            <Button onClick={addPlan} className="btnadd">
+                Add New Plan
+            </Button>
+            <Button className="btncancel" onClick={deletePlan}>
+                Delete Selected Plan
+            </Button>
         </div>
     );
 }

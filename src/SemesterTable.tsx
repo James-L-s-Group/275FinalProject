@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-extra-parens */
+//Something was syntactically correct, but prettier was being annoying and clicking the fix button made it worse
 import React, { useState } from "react";
 import "./App.css";
 ///import { Button } from "react-bootstrap";
@@ -9,6 +9,7 @@ import { plan } from "./PlannerInterfaces/plan";
 import { semester } from "./PlannerInterfaces/semester";
 import { DisplayCourse } from "./CoursePlan";
 import * as catalogData from "./catalog.json";
+import { PreReqs } from "./PreRequisite";
 //Courses to be used to for the datalist autofill
 interface currentSemester {
     semester: semester;
@@ -297,6 +298,10 @@ export function DisplaySemester({
                 >
                     Remove All Courses
                 </Button>
+                <PreReqs
+                    allSemesters={plan.semesters}
+                    semester={semester}
+                ></PreReqs>
             </table>
         </>
     );

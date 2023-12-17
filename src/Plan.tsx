@@ -1,5 +1,5 @@
 /* eslint-disable no-extra-parens */
-/* eslint-disable @typescript-eslint/no-unused-vars */
+//Something was syntactically correct, but prettier was being annoying and clicking the fix button made it worse
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { plan } from "./PlannerInterfaces/plan";
@@ -25,7 +25,7 @@ export function Plan({
         const newSemesters = [...plan.semesters];
         const insertIndex =
             newSemesters.findIndex((semester: semester) => semester.id === id) +
-            1; //Finding index of where to put new semester
+            1;
         newSemesters.splice(insertIndex, 0, {
             id: "",
             name: "New " + plan.semesters[insertIndex - 1].name,
@@ -35,22 +35,22 @@ export function Plan({
         }); //Add new semester
         setPlan({ ...plan, semesters: newSemesters }); //Update plan
     }
-    //Delete semester
+    //Delete a semester
     function deleteSemester(id: string) {
         const newSemesters = [...plan.semesters];
         newSemesters.splice(
             newSemesters.findIndex((semester: semester) => semester.id === id),
             1
-        ); //Removes plan by id
+        ); // Find a remove plan by id
         setPlan({ ...plan, semesters: newSemesters }); //Update plan
     }
     function saveChanges() {
         const replaceIndex = degreePlans.findIndex(
             (current: plan) => current.id === plan.id
-        ); //Finds where the plan we have a copy of is
+        );
         const newDegreePlans = [...degreePlans]; //Makes a copy of the old list of plans
         newDegreePlans.splice(replaceIndex, 1, plan); //Replaces the old plan in the list with our local version
-        setDegreePlans(newDegreePlans); //Updates the list of plans in App
+        setDegreePlans(newDegreePlans);
     }
 
     function clearAllSemesters() {
@@ -72,7 +72,6 @@ export function Plan({
             ]
         });
     }
-
     function editPlanName(event: React.ChangeEvent<HTMLInputElement>) {
         setPlan({ ...plan, name: event.target.value });
     }
